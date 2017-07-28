@@ -1,0 +1,103 @@
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
+
+.btn {background:lightskyblue; 
+      display: inline-block; 
+      padding: 5px 10px 6px; 
+      color: white; 
+      text-decoration: none; 
+      font-weight: bold; 
+      border-radius: 5px; 
+      box-shadow: 0 1px 3px #999; 
+      text-shadow: 0 -1px 1px #222; 
+      border: none; 
+      position: relative; 
+      cursor: pointer; 
+      font-size: 14px; 
+      font-family:Areial, Geneva, sans-serif;}
+
+body {margin:0;}
+
+.topnav {
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+.topnav  {
+    float: left;
+    display: block;
+    color:skyblue;
+    text-align: center;
+    width: 100%;
+    height:75px;
+    text-decoration: none;
+    font-size: 17px;
+    text-shadow: 0 -1px 1px #222; 
+    font-weight: bold;
+}
+
+.topnav:hover {
+    background-color: skyblue;
+    color: skyblue;
+}
+
+.topnav.active {
+    background-color: skyblue;
+    color: white;
+}
+img {
+    border: 0 none;
+    vertical-align: middle;
+    width:304px;
+    height:228px;
+}
+
+
+.btn-block {
+    height:25px;
+
+}
+
+.Login {
+    text-align: left;
+}
+
+.btn-large {
+    width: 100px
+}
+
+.btn-primary {
+
+}
+/* text styles */
+
+h1,h2,h3 {
+    font-family: Helvetica, sans-serif;
+    color: lightskyblue;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+h3 {
+    font-size: 15px;
+    line-height: 21px;
+    color:#555;
+}
+.errors {
+    color: red;
+    font-weight: bold;
+    display: block;
+    margin-left: 105px;
+}
+header{
+    display: block;
+}

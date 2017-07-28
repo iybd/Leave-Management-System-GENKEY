@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <annotation-driven />:-->
+ <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:flow="http://www.springframework.org/schema/webflow-config"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:util="http://www.springframework.org/schema/util"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.1.RELEASE.xsd
+          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.1.RELEASE.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.1.RELEASE.xsd
+          http://www.springframework.org/schema/webflow-config http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.0.xsd
+          http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.0.1.RELEASE.xsd
+          http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.1.RELEASE.xsd
+          http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.1.RELEASE.xsd
+">
+   
+<!--    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="order">
+            <value>0</value>
+        </property>
+    </bean>
+           <bean id="beanNameViewResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver">
+<property name="order"><value>1</value></property>
+</bean>
+<bean id="xmlFileViewResolver" class="org.springframework.web.servlet.view.XmlFileViewResolver">
+<property name="location">
+<value>/WEB-INF/views.xml</value>
+</property>
+<property name="order"><value>2</value></property>
+</bean>-->
+    
+<!--   Declaring handler mapping beans
+    <bean id="beanNameUrlMapping" class="org.springframework.web.
+➥ servlet.handler.BeanNameUrlHandlerMapping">
+<property name="order"><value>2</value></property>
+</bean>
+<bean id="simpleUrlMapping" class="org.springframework.web.
+➥ servlet.handler.SimpleUrlHandlerMapping">
+<property name="order"><value>3</value></property>
+<property name="mappings">
+</property>
+</bean>
+<bean id="simpleControllerHandlerAdapter" class="org.springframework.web.
+➥servlet.mvc.SimpleControllerHandlerAdapter">
+<property name="order"><value>0</value></property>
+<property name="mappings">
+</property>
+</bean>-->-->
+    
+<!--     Dispatches requests mapped to org.springframework.web.servlet.mvc.Controller implementations 
+    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter" />-->
+<!--    Declares the LoginController.
+    <bean name="/Login.htm"
+          class="com.leavesystem.controller.LoginController">
+        <property name="LoginService" ref="LoginService" />
+        <property name="FormView" value="login"/>
+        <property name="SuccessView"value=""/>
+          </bean>
+          <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+          <bean class="com.leavesystem.controller.EmployeeController" id="EmployeeCon"/>
+          <bean class="com.leavesystem.controller.LeaveRequestController" id="LeaveCon"/>
+          <bean class="com.leavesystem.controller.LoginController" id="LoginCon"/>
+          <bean class="com.leavesystem.controller." id=""/>-->
+        <!--Declaring a view resolver-->
+<!--        <bean id="viewResolver"
+              class="org.springframework.web.
+➥ servlet.view.InternalResourceViewResolver">
+            <property name="viewClass"
+value="org.springframework.web.servlet.view.JstlView" />
+            <property name="prefix" value= "/WEB_INF/views/jsp/"/>
+            <property name="suffix" value= ".jsp"/>
+        </bean>
+ 
+ 
+  <bean id="simpleUrlMapping" class=
+"org.springframework.web.servlet.handler.
+➥ SimpleUrlHandlerMapping">
+<property name="mappings">
+<props>
+<prop key="CreateUser.jsp">EmployeeCon</prop>
+<prop key=""></prop>
+<prop key=""></prop>
+<prop key=""></prop>
+</props>
+</property>
+</bean>
+Declares the CreateUserController.
+    <bean name="/CreateUser.jsp"
+          class="com.leavesystem.controller.CreateUserController">
+        <property name="CreateUserService" ref="CreateUserService" />
+        <property name="SuccessView" value="Login"/>
+        <property name="FormView" value="CreateUser"/>
+        <bean name="createUserService" class="service.CreateUserService" />
+          </bean>-->
+
+</beans>

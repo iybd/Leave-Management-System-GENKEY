@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+<!--    <servlet>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>*.htm</url-pattern>
+    </servlet-mapping>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            /WEB-INF/config/application-service.xml
+            /WEB-INF/config/application-data.xml
+            /WEB-INF/config/application-security.xml
+            /WEB-INF/config/web-application-config.xml
+        </param-value>-->
+<!--    </context-param>-->
+    <welcome-file-list>
+        <welcome-file>/WEB-INF/views/jsp/login.jsp</welcome-file>
+    </welcome-file-list>
+    <!--    <jsp-config>
+        <jsp-property-group>
+            <description>views</description>
+            <url-pattern>/WEB-INF/views/jsp/*</url-pattern>
+        </jsp-property-group>
+        <jsp-property-group>
+            <display-name>error</display-name>
+            <url-pattern>/WEB-INF/views/jsp/403.jsp</url-pattern>
+        </jsp-property-group>
+    </jsp-config>
+    <security-constraint>
+        <display-name>SECURITY CONSTRAINT</display-name>
+        <web-resource-collection>
+            <web-resource-name>ADMINHOME</web-resource-name>
+            <description/>
+            <url-pattern>/WEB-INF/views/jsp/adminHome.jsp</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <description/>
+            <role-name>ADMIN</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <display-name>Constraint User</display-name>
+        <web-resource-collection>
+            <web-resource-name>userhome</web-resource-name>
+            <description/>
+            <url-pattern>/WEB-INF/views/jsp/home.jsp</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <description/>
+            <role-name>USER</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <display-name>Constraint User1</display-name>
+        <web-resource-collection>
+            <web-resource-name>userhome</web-resource-name>
+            <description/>
+            <url-pattern>/WEB-INF/views/jsp/teamLeaderHome.jsp</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <description/>
+            <role-name>TEAMLEADER</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/WEB-INF/views/jsp/login.jsp</form-login-page>
+            <form-error-page>/WEB-INF/views/jsp/accessDenied.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+    <security-role>
+        <description>ADMINSTRATION ROLE</description>
+        <role-name>ADMIN</role-name>
+    </security-role>
+    <security-role>
+        <description>USER ROLE</description>
+        <role-name>USER</role-name>
+    </security-role>
+    <security-role>
+        <description>TEAMLEADER ROLE</description>
+        <role-name>TEAMLEADER</role-name>
+    </security-role>-->
+</web-app>
